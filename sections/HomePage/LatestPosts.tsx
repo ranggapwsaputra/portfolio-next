@@ -53,8 +53,7 @@ export const LatestPostsSection: React.FC<LatestPostsSectionProps> = props => {
         <div className="description">
           <h3 className="title">Start reading my blog.</h3>
           <p className="subtitle">
-            I write monthly about web and product development with React as well
-            as how to become a better developer.
+            I write about life, tech & fact!
           </p>
         </div>
         <div className="featured-post">
