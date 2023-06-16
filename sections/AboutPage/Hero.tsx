@@ -105,9 +105,9 @@ export const HeroSection: React.FC = () => {
           />
           <div className="hero-introduction">
             <h1>
-              Writes code.
+              Think security,
               <br />
-              Thinks product.
+              To build a system.
             </h1>
             <p>
               As a web developer and former product manager, I love engineering
