@@ -1,5 +1,4 @@
 import { darkTheme, styled, theme } from '@config/stitches.config';
-
 import { HEADER_HEIGHT } from '@components/Header';
 import { ContentWrapper } from '@components/Layout';
 import { TextDecoration } from '@components/TextDecoration';
@@ -49,16 +48,16 @@ export const HeroSection: React.FC = () => {
       <ContentWrapper className="hero-content">
         <h1>
           <TextDecoration variant="spark" color={colors.secondary500.value}>
-            Writing
+            Thinking 
           </TextDecoration>{' '}
-          code. Thinking{' '}
+          security. To build{' '}
           <TextDecoration variant="underline" color={colors.pinky.value}>
-            product
+            a system.
           </TextDecoration>
           .
         </h1>
-        <p>I help individuals and companies build better web applications.</p>
-        <p>Available for freelance work in Hamburg or remote.</p>
+        <p>I help individuals and companies to build better systems.</p>
+        <p>Available for freelance work in Jakarta or remotely.</p>
       </ContentWrapper>
       <div className="profile-card-bg">
         <ContentWrapper>
