@@ -69,14 +69,7 @@ export const LatestProjectsSection: React.FC<
           <ProjectPreview key={key} project={project} />
         ))}
       </div>
-      <ContentWrapper className="latest-projects-content">
-        {/* <div className="discover-projects">
-          <Link to={ContentRoutes.projects}>
-            Discover all {props.projects.length} projects{' '}
-            <TextDecoration variant="arrow" />
-          </Link>
-        </div> */}
-      </ContentWrapper>
+
     </StyledSection>
   );
 };
