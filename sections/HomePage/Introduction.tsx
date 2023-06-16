@@ -1,4 +1,4 @@
-import PortraitImage from '../../public/images/portrait.jpg';
+import PortraitImage from '../../public/images/PhotoPotrait.png';
 
 import { styled, wavingAnimation } from '@config/stitches.config';
 
@@ -63,17 +63,12 @@ export const IntroductionSection: React.FC = () => {
     <StyledSection id="introduction-section">
       <ContentWrapper className="content">
         <div className="description">
-          <h3 className="title">Nice to have you here.</h3>
+          <h3 className="title">Nice to have you here buddy.</h3>
           <p className="subtitle">
-            Hey, I&apos;m Konstantin. I am a freelance web developer with a
-            background in product management.
+            Hey, I&apos;m Rangga. I am a Head of IT with a specialization in network, programming, and cyber security.
           </p>
           <p>
-            My passion has always been at the intersection of product and
-            engineering. I mostly work with startups and small companies to
-            create beautiful digital products and web applications. Besides, I
-            write regularly on my blog about web and product development as well
-            as careers.
+            My passion has always been at the intersection of cyber security. I mostly work in hospitality companies to research IT requirements and create standard operational procedure and manage the internet network so that it can run smoothly without interruption and create beautiful digital products and web applications. Besides, I write regularly on my blog about information technologies to develop career.
           </p>
         </div>
         <Picture
@@ -95,8 +90,7 @@ export const IntroductionSection: React.FC = () => {
         >
           <h5>Discover my blog.</h5>
           <p>
-            Learn how to build digital products with React and other modern web
-            development tools.
+              The information as well as my opinions when I'm learning or sharing something.
           </p>
         </Card>
         <Card
