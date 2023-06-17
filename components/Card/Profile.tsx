@@ -76,7 +76,7 @@ export const ProfileCard: React.FC<ProfileCardProps> = props => {
           <Avatar size={60} />
           <div>
             <span className="name">Rangga Saputra</span>
-            <span className="role">Product Developer & Cyber Security Advisor</span>
+            <span className="role">System Developer & Cyber Security Advisor</span>
           </div>
         </div>
         <Button as="link" to="/services" colors={{ bgHover: 'secondary100' }}>
