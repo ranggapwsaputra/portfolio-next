@@ -39,3 +39,7 @@ const StyledSection = styled('section', {
     },
   },
 });
+
+type LatestProjectsSectionProps = {
+  projects: EnrichedProjectMatter[];
+};
