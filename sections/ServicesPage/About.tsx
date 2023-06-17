@@ -1,4 +1,4 @@
-import PortraitImage from '../../public/images/portrait-sitting.jpg';
+import PortraitImage from '../../public/images/PhotoServices.png';
 
 import { styled } from '@config/stitches.config';
 import { ContentWrapper } from '@components/Layout';
@@ -46,21 +46,15 @@ export const AboutSection: React.FC = () => {
     <StyledAboutSection id="about-section">
       <ContentWrapper>
         <div className="about-description">
-          <h3 className="title">A developer who cares about the product.</h3>
+          <h3 className="title">A person who cares about the cyber security.</h3>
           <p>
-            For me, programming is about bringing ideas and products to life.
-            This is the reason why I started learning web development while
-            working as a product manager.
+          For me, cyber security has become an increasingly important issue in today's digital era. This is the reason why I started focusing on cyber security while working as Cyber Security Advisor.
           </p>
           <p>
-            Nowadays, I support startups and small companies as a product
-            developer. In that, I develop modern frontend applications and
-            engage in product-related matters.
+          Nowadays, I work in a luxury hotel as a Head of Information Technology. Besides focusing on cyber security, I also develop modern front-end applications and websites.
           </p>
           <p>
-            So if you are looking for a hands-on developer who cares about users
-            and code,{' '}
-            <Link to="#contact-section">let’s put our heads together</Link>!
+          So if you are looking for a hands-on advisor who cares about users,{' '} <Link to="#contact-section">let’s put our heads together</Link>!
           </p>
         </div>
         <div className="about-picture">

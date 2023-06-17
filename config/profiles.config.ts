@@ -10,31 +10,26 @@ export type Profile = {
   icon?: React.FC<SvgProps>;
 };
 
-export const TwitterHandle = '@kmuenster';
+export const TwitterHandle = '@ranggapwsaputra';
 
 export const socialProfiles: Profile[] = [
   {
-    to: 'https://www.linkedin.com/in/konstantin-muenster/',
+    to: 'https://www.linkedin.com/in/ranggapwsaputra/',
     label: 'LinkedIn',
     icon: LinkedInSvg,
   },
   {
-    to: 'https://github.com/konstantinmuenster/',
+    to: 'https://github.com/ranggapwsaputra/',
     label: 'Github',
     icon: GithubSvg,
   },
   {
-    to: 'https://twitter.com/@kmuenster',
+    to: 'https://twitter.com/@ranggapwsaputra',
     label: 'Twitter',
     icon: TwitterSvg,
   },
   {
-    to: 'https://medium.com/@konstantinmuenster',
-    label: 'Medium',
-    icon: MediumSvg,
-  },
-  {
-    to: 'mailto:mail@konstantin.digital',
+    to: 'mailto:email@ranggapwsaputra',
     label: 'Email',
   },
 ];

@@ -42,11 +42,9 @@ export const HeroSection: React.FC<HeroSectionProps> = props => {
     <StyledSection id="hero-section">
       <ContentWrapper>
         <div className="hero-content">
-          <h1>Let&apos;s Build Together</h1>
+          <h1>Let&apos;s do something together</h1>
           <p>
-            Looking for a product-minded developer? I am a freelance web /
-            product developer with over 5 years of experience and a background
-            in product management.
+          Looking for a partner to work with? I am a with a specialization in network, programming, and cyber security with over 10 years of experience.
           </p>
         </div>
         <DroppableServices {...props} />
