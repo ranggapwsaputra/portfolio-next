@@ -135,7 +135,7 @@ export const BlogPostHeroSection: React.FC<
         <div className="blog-post-hero-footer">
           <div className="blog-post-hero-avatar">
             <Avatar size={28} />
-            <span>Konstantin Münster</span>
+            <span>Rangga Saputra</span>
           </div>
           <div className="blog-post-hero-details">
             <div className="blog-post-hero-published-at">
@@ -145,12 +145,7 @@ export const BlogPostHeroSection: React.FC<
               {props.readingTime
                 ? `${Math.round(props.readingTime.minutes)} min read`
                 : undefined}
-            </div>
-            <div className="blog-post-hero-medium-link">
-              {props.mediumUrl ? (
-                <Link to={props.mediumUrl}>Read on Medium</Link>
-              ) : undefined}
-            </div>
+            </div>            
           </div>
         </div>
       </ContentWrapper>

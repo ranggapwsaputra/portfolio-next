@@ -53,9 +53,7 @@ export const HeroSection: React.FC<HeroSectionProps> = props => {
         <div className="hero-content">
           <h1>Blog</h1>
           <p>
-            I write about product and web development with React as well as
-            becoming a better developer. Discover whatever you are interested
-            in!
+          I write about cyber security and web development with React as well as becoming a better developer. Discover whatever you are interested in!
           </p>
         </div>
         <TrendingTopics posts={props.posts} />
