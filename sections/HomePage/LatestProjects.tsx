@@ -64,11 +64,6 @@ export const LatestProjectsSection: React.FC<
           </p>
         </div>
       </ContentWrapper>
-      <div className="latest-projects-list">
-        {latestProjects.map((project, key) => (
-          <ProjectPreview key={key} project={project} />
-        ))}
-      </div>
 
     </StyledSection>
   );
