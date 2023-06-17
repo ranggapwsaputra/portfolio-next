@@ -55,9 +55,7 @@ export const LatestProjectsSection: React.FC<
 
   return (
     <StyledSection id="latest-projects-section">
-      <ContentWrapper className="latest-projects-content">
-      </ContentWrapper>
-
+      
     </StyledSection>
   );
 };
