@@ -43,3 +43,21 @@ const StyledSection = styled('section', {
 type LatestProjectsSectionProps = {
   projects: EnrichedProjectMatter[];
 };
+
+export const LatestProjectsSection: React.FC<
+  LatestProjectsSectionProps
+> = props => {
+  const latestProjects = useMemo(() => {
+    return props.projects.filter(project => {
+      return LatestProjects.includes(project.slug);
+    });
+  }, [props.projects]);
+
+  return (
+    <StyledSection id="latest-projects-section">
+      <ContentWrapper className="latest-projects-content">
+      </ContentWrapper>
+
+    </StyledSection>
+  );
+};
