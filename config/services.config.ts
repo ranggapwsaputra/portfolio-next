@@ -1,6 +1,6 @@
 export const serviceDefinitions = [
   {
-    emoji: '👨‍💻',
+    emoji: '🛡️',
     name: 'Support Your Team',
     summary: 'I will join your team as a product & web developer.',
     content: {

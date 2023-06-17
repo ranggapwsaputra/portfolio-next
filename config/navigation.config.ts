@@ -12,6 +12,10 @@ export const headerNavigation: NavigationItem[] = [
     to: '/blog',
     label: 'Blog',
   },
+  {
+    to: '/https://app.codesignal.com/profile/ranggapwsaputra',
+    label: 'CodeSignal',
+  },
   // {
   //   to: '/about',
   //   label: 'About',
@@ -20,11 +24,11 @@ export const headerNavigation: NavigationItem[] = [
 
 export const footerNavigation: NavigationItem[] = [
   {
-    to: '/transparency',
+    to: '/',
     label: 'Transparency',
   },
   {
-    to: '/imprint',
+    to: '/',
     label: 'Imprint',
   },
 ];
