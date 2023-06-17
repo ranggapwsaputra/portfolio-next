@@ -39,20 +39,20 @@ export const generateSeoProps = (
         ]
       : undefined,
     type: input.type ?? 'website',
-    site_name: 'konstantin',
+    site_name: 'Rangga',
     article: input.article,
     profile: {
-      firstName: 'Konstantin',
-      lastName: 'Münster',
-      username: 'konstantinmuenster',
+      firstName: 'Rangga',
+      lastName: 'Saputra',
+      username: 'ranggapwsaputra',
     },
   },
 });
 
 export const defaultSeoProps = generateSeoProps({
-  title: 'Konstantin Münster – Web & Product Developer',
+  title: 'Rangga Saputra – System Developer & Security Advisor',
   description:
-    'I am a freelance developer who helps individuals and companies build better web applications.',
+    'I am a freelance developer who helps individuals and companies to build better systems.',
   url: baseUrl,
   image: `${baseUrl}/api/og`,
 });
