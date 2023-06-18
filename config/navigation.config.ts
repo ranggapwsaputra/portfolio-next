@@ -27,5 +27,4 @@ export const footerNavigation: NavigationItem[] = [
     to: '/',
     label: 'Transparency',
   }
-  asdadsadsadasdsa
 ];
