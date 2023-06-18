@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Konstantin Münster's Blog</title>
+        <link>https://konstantin.digital</link>
+        <description>Tutorials, guides, and advice for web developers.</description>
+        <lastBuildDate>Thu, 15 Jun 2023 07:20:16 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <image>
+            <title>Konstantin Münster's Blog</title>
+            <url>https://konstantin.digital/favicon.ico</url>
+            <link>https://konstantin.digital</link>
+        </image>
+        <copyright>All rights reserved 2023, Konstantin Münster</copyright>
+        <item>
+            <title><![CDATA[Why open-source projects are your best marketing]]></title>
+            <link>https://konstantin.digital//blog/why-open-source-projects-are-your-best-marketing</link>
+            <guid>https://konstantin.digital//blog/why-open-source-projects-are-your-best-marketing</guid>
+            <pubDate>Wed, 31 May 2023 17:00:00 GMT</pubDate>
+            <description><![CDATA[Finding new clients as a freelancer is hard. Learn how open-source can help you in that – and why it beats most other marketing strategies.]]></description>
+            <content:encoded><![CDATA[Finding new clients as a freelancer is hard. Learn how open-source can help you in that – and why it beats most other marketing strategies.]]></content:encoded>
+            <author>email@ranggapwsaputra (Konstantin Münster)</author>
+        </item>
+        <item>
+            <title><![CDATA[How To Build A Floating Menu With Lexical  and React]]></title>
+            <link>https://konstantin.digital//blog/how-to-build-a-floating-menu-with-lexical-react</link>
+            <guid>https://konstantin.digital//blog/how-to-build-a-floating-menu-with-lexical-react</guid>
+            <pubDate>Mon, 01 May 2023 17:00:00 GMT</pubDate>
+            <description><![CDATA[Nowadays text editors like Notion let you easily format text with a bubble menu near your selection. Let's build one!]]></description>
+            <content:encoded><![CDATA[Nowadays text editors like Notion let you easily format text with a bubble menu near your selection. Let's build one!]]></content:encoded>
+            <author>email@ranggapwsaputra (Konstantin Münster)</author>
+        </item>
+        <item>
+            <title><![CDATA[3 Tips To Write Better Code As A Beginner Frontend Developer]]></title>
+            <link>https://konstantin.digital//blog/3-tips-to-write-better-code-as-junior-developer</link>
+            <guid>https://konstantin.digital//blog/3-tips-to-write-better-code-as-junior-developer</guid>
+            <pubDate>Mon, 03 Apr 2023 17:00:00 GMT</pubDate>
+            <description><![CDATA[As a beginner, you don’t think about coding style. Implement these three principles to improve your code base immediately.]]></description>
+            <content:encoded><![CDATA[As a beginner, you don’t think about coding style. Implement these three principles to improve your code base immediately.]]></content:encoded>
+            <author>email@ranggapwsaputra (Konstantin Münster)</author>
+        </item>
+        <item>
+            <title><![CDATA[trial posting]]></title>
+            <link>https://konstantin.digital//blog/trial-post</link>
+            <guid>https://konstantin.digital//blog/trial-post</guid>
+            <pubDate>Mon, 03 Apr 2023 17:00:00 GMT</pubDate>
+            <description><![CDATA[As a beginner, you don’t think about coding style. Implement these three principles to improve your code base immediately.]]></description>
+            <content:encoded><![CDATA[As a beginner, you don’t think about coding style. Implement these three principles to improve your code base immediately.]]></content:encoded>
+            <author>email@ranggapwsaputra (Konstantin Münster)</author>
+        </item>
+        <item>
+            <title><![CDATA[Generating Dynamic OG Images For Your Blog With Vercel OG]]></title>
+            <link>https://konstantin.digital//blog/generating-dynamic-og-images-with-vercel-og</link>
+            <guid>https://konstantin.digital//blog/generating-dynamic-og-images-with-vercel-og</guid>
+            <pubDate>Tue, 07 Mar 2023 17:00:00 GMT</pubDate>
+            <description><![CDATA[Improve your Next.js-based blog with OG images generated with @vercel/og.]]></description>
+            <content:encoded><![CDATA[Improve your Next.js-based blog with OG images generated with @vercel/og.]]></content:encoded>
+            <author>email@ranggapwsaputra (Konstantin Münster)</author>
+        </item>
+        <item>
+            <title><![CDATA[How To Build A Text Editor With Lexical and React]]></title>
+            <link>https://konstantin.digital//blog/how-to-build-a-text-editor-with-lexical-and-react</link>
+            <guid>https://konstantin.digital//blog/how-to-build-a-text-editor-with-lexical-and-react</guid>
+            <pubDate>Mon, 09 Jan 2023 17:00:00 GMT</pubDate>
+            <description><![CDATA[Lexical is a new framework for building rich text editors. Let's build a simple WYSIWYG editor with it.]]></description>
+            <content:encoded><![CDATA[Lexical is a new framework for building rich text editors. Let's build a simple WYSIWYG editor with it.]]></content:encoded>
+            <author>email@ranggapwsaputra (Konstantin Münster)</author>
+        </item>
+        <item>
+            <title><![CDATA[Tagged Template Literals - How Tools Like Styled Components Work]]></title>
+            <link>https://konstantin.digital//blog/tagged-template-literals-how-tools-like-styled-components-work</link>
+            <guid>https://konstantin.digital//blog/tagged-template-literals-how-tools-like-styled-components-work</guid>
+            <pubDate>Wed, 09 Nov 2022 17:00:00 GMT</pubDate>
+            <description><![CDATA[Have you ever wondered how syntactical sugar like `styled` just magically works? Let’s recreate this functionality using tagged template strings in Javascript.]]></description>
+            <content:encoded><![CDATA[Have you ever wondered how syntactical sugar like `styled` just magically works? Let’s recreate this functionality using tagged template strings in Javascript.]]></content:encoded>
+            <author>email@ranggapwsaputra (Konstantin Münster)</author>
+        </item>
+        <item>
+            <title><![CDATA[3 Things That Helped Me Going Deep (Work)]]></title>
+            <link>https://konstantin.digital//blog/things-that-helped-me-doing-deep-work</link>
+            <guid>https://konstantin.digital//blog/things-that-helped-me-doing-deep-work</guid>
+            <pubDate>Fri, 14 Oct 2022 17:00:00 GMT</pubDate>
+            <description><![CDATA[How to put Cal Newport’s deep work concept to practice? These 3 tips helped me over the last years.]]></description>
+            <content:encoded><![CDATA[How to put Cal Newport’s deep work concept to practice? These 3 tips helped me over the last years.]]></content:encoded>
+            <author>email@ranggapwsaputra (Konstantin Münster)</author>
+        </item>
+        <item>
+            <title><![CDATA[Should You Quit Your Job For Your Side-Project?]]></title>
+            <link>https://konstantin.digital//blog/quitting-job-for-side-project</link>
+            <guid>https://konstantin.digital//blog/quitting-job-for-side-project</guid>
+            <pubDate>Fri, 23 Sep 2022 17:00:00 GMT</pubDate>
+            <description><![CDATA[Going all-in on one’s beloved side-project? Sounds great! But how do you know it is the right project and time to do so? Let’s take a look at a simple concept.]]></description>
+            <content:encoded><![CDATA[Going all-in on one’s beloved side-project? Sounds great! But how do you know it is the right project and time to do so? Let’s take a look at a simple concept.]]></content:encoded>
+            <author>email@ranggapwsaputra (Konstantin Münster)</author>
+        </item>
+        <item>
+            <title><![CDATA[ES Modules: All You Need To Know]]></title>
+            <link>https://konstantin.digital//blog/es-modules-all-you-need-to-know</link>
+            <guid>https://konstantin.digital//blog/es-modules-all-you-need-to-know</guid>
+            <pubDate>Fri, 02 Sep 2022 17:00:00 GMT</pubDate>
+            <description><![CDATA[ESM and CommonJS are Javascript's module systems. Let's understand how they compare and when to choose which system.]]></description>
+            <content:encoded><![CDATA[ESM and CommonJS are Javascript's module systems. Let's understand how they compare and when to choose which system.]]></content:encoded>
+            <author>email@ranggapwsaputra (Konstantin Münster)</author>
+        </item>
+        <item>
+            <title><![CDATA[Generating Stitches Variants For Each Color Of Your Theme]]></title>
+            <link>https://konstantin.digital//blog/generating-stitches-variants-for-theme-colors</link>
+            <guid>https://konstantin.digital//blog/generating-stitches-variants-for-theme-colors</guid>
+            <pubDate>Mon, 22 Aug 2022 17:00:00 GMT</pubDate>
+            <description><![CDATA[Stiches.dev lets you write performant CSS-in-JS. Let’s see how we can speed up creating variants with your color palette!]]></description>
+            <content:encoded><![CDATA[Stiches.dev lets you write performant CSS-in-JS. Let’s see how we can speed up creating variants with your color palette!]]></content:encoded>
+            <author>email@ranggapwsaputra (Konstantin Münster)</author>
+        </item>
+        <item>
+            <title><![CDATA[Using The New <next/image> Component]]></title>
+            <link>https://konstantin.digital//blog/using-the-new-next-12-image-component</link>
+            <guid>https://konstantin.digital//blog/using-the-new-next-12-image-component</guid>
+            <pubDate>Sat, 06 Aug 2022 17:00:00 GMT</pubDate>
+            <description><![CDATA[Next.js 12.2 includes a totally revised component for image optimization. Let’s see what has changed.]]></description>
+            <content:encoded><![CDATA[Next.js 12.2 includes a totally revised component for image optimization. Let’s see what has changed.]]></content:encoded>
+            <author>email@ranggapwsaputra (Konstantin Münster)</author>
+        </item>
+        <item>
+            <title><![CDATA[How to Build a Text Editor Like Notion]]></title>
+            <link>https://konstantin.digital//blog/how-to-build-a-text-editor-like-notion</link>
+            <guid>https://konstantin.digital//blog/how-to-build-a-text-editor-like-notion</guid>
+            <pubDate>Fri, 06 Nov 2020 17:00:00 GMT</pubDate>
+            <description><![CDATA[Build your own Notion clone with React.js and learn how such text editors work.]]></description>
+            <content:encoded><![CDATA[Build your own Notion clone with React.js and learn how such text editors work.]]></content:encoded>
+            <author>email@ranggapwsaputra (Konstantin Münster)</author>
+        </item>
+        <item>
+            <title><![CDATA[How To Find The Caret Inside A Contenteditable Element]]></title>
+            <link>https://konstantin.digital//blog/how-to-find-the-caret-inside-a-contenteditable-element</link>
+            <guid>https://konstantin.digital//blog/how-to-find-the-caret-inside-a-contenteditable-element</guid>
+            <pubDate>Fri, 30 Oct 2020 17:00:00 GMT</pubDate>
+            <description><![CDATA[Get the cursor coordinates and index position to display interactive UI elements!]]></description>
+            <content:encoded><![CDATA[Get the cursor coordinates and index position to display interactive UI elements!]]></content:encoded>
+            <author>email@ranggapwsaputra (Konstantin Münster)</author>
+        </item>
+        <item>
+            <title><![CDATA[How To Build A Portfolio With Gatsby — From Scratch To Deployment]]></title>
+            <link>https://konstantin.digital//blog/how-to-build-a-portfolio-with-gatsby-from-scratch-to-deployment</link>
+            <guid>https://konstantin.digital//blog/how-to-build-a-portfolio-with-gatsby-from-scratch-to-deployment</guid>
+            <pubDate>Fri, 05 Jun 2020 17:00:00 GMT</pubDate>
+            <description><![CDATA[Learn how Gatsby works and how you can build a personal website with it — step by step!]]></description>
+            <content:encoded><![CDATA[Learn how Gatsby works and how you can build a personal website with it — step by step!]]></content:encoded>
+            <author>email@ranggapwsaputra (Konstantin Münster)</author>
+        </item>
+        <item>
+            <title><![CDATA[What Is Project Fugu — Google's Initiative To Unlock All Native Device Features For The Web]]></title>
+            <link>https://konstantin.digital//blog/what-is-project-fugu-googles-initiative-to-unlock-all-native-device-features-for-the-web</link>
+            <guid>https://konstantin.digital//blog/what-is-project-fugu-googles-initiative-to-unlock-all-native-device-features-for-the-web</guid>
+            <pubDate>Mon, 04 May 2020 17:00:00 GMT</pubDate>
+            <description><![CDATA[After PWAs, Project Fugu is Google’s next effort to reach parity with native.]]></description>
+            <content:encoded><![CDATA[After PWAs, Project Fugu is Google’s next effort to reach parity with native.]]></content:encoded>
+            <author>email@ranggapwsaputra (Konstantin Münster)</author>
+        </item>
+        <item>
+            <title><![CDATA[A Case For Progressive Web Apps: Why You Can’t Ignore Them]]></title>
+            <link>https://konstantin.digital//blog/a-case-for-progressive-web-apps-why-you-cant-ignore-them</link>
+            <guid>https://konstantin.digital//blog/a-case-for-progressive-web-apps-why-you-cant-ignore-them</guid>
+            <pubDate>Thu, 27 Feb 2020 17:00:00 GMT</pubDate>
+            <description><![CDATA[No matter if you have a native app or not. Ignoring PWA’s technology can harm your venture’s success long term.]]></description>
+            <content:encoded><![CDATA[No matter if you have a native app or not. Ignoring PWA’s technology can harm your venture’s success long term.]]></content:encoded>
+            <author>email@ranggapwsaputra (Konstantin Münster)</author>
+        </item>
+        <item>
+            <title><![CDATA[An Introduction To Service-Worker-Side Templating]]></title>
+            <link>https://konstantin.digital//blog/an-introduction-to-service-worker-side-templating</link>
+            <guid>https://konstantin.digital//blog/an-introduction-to-service-worker-side-templating</guid>
+            <pubDate>Sat, 25 Jan 2020 17:00:00 GMT</pubDate>
+            <description><![CDATA[This article shows you what service worker rendering is, why it can be beneficial, and how you can implement it.]]></description>
+            <content:encoded><![CDATA[This article shows you what service worker rendering is, why it can be beneficial, and how you can implement it.]]></content:encoded>
+            <author>email@ranggapwsaputra (Konstantin Münster)</author>
+        </item>
+        <item>
+            <title><![CDATA[Progressive Web Apps in 2020: Which Challenges to Overcome?]]></title>
+            <link>https://konstantin.digital//blog/progressive-web-apps-in-2020-which-challenges-to-overcome</link>
+            <guid>https://konstantin.digital//blog/progressive-web-apps-in-2020-which-challenges-to-overcome</guid>
+            <pubDate>Sun, 29 Dec 2019 17:00:00 GMT</pubDate>
+            <description><![CDATA[Being around for 5 years, Progressive Web Apps still are a niche in our app market. But why? Let’s figure out what challenges to overcome.]]></description>
+            <content:encoded><![CDATA[Being around for 5 years, Progressive Web Apps still are a niche in our app market. But why? Let’s figure out what challenges to overcome.]]></content:encoded>
+            <author>email@ranggapwsaputra (Konstantin Münster)</author>
+        </item>
+        <item>
+            <title><![CDATA[How To Add Netlify Redirects To A Gatsby Site]]></title>
+            <link>https://konstantin.digital//blog/how-to-add-netlify-redirects-to-a-gatsby-site</link>
+            <guid>https://konstantin.digital//blog/how-to-add-netlify-redirects-to-a-gatsby-site</guid>
+            <pubDate>Sun, 22 Dec 2019 17:00:00 GMT</pubDate>
+            <description><![CDATA[Either choose the Netlify-like way via _redirects file or stick with the Gatsby approach which uses the createRedirect action.]]></description>
+            <content:encoded><![CDATA[Either choose the Netlify-like way via _redirects file or stick with the Gatsby approach which uses the createRedirect action.]]></content:encoded>
+            <author>email@ranggapwsaputra (Konstantin Münster)</author>
+        </item>
+        <item>
+            <title><![CDATA[Async/Await for Beginners— Understanding Asynchronous Code in Javascript]]></title>
+            <link>https://konstantin.digital//blog/async-await-for-beginners-understanding-asynchronous-code-in-javascript</link>
+            <guid>https://konstantin.digital//blog/async-await-for-beginners-understanding-asynchronous-code-in-javascript</guid>
+            <pubDate>Fri, 20 Sep 2019 17:00:00 GMT</pubDate>
+            <description><![CDATA[Have you ever struggled with understanding Async / Await? — A beginner-friendly introduction to this new syntax and its purpose.]]></description>
+            <content:encoded><![CDATA[Have you ever struggled with understanding Async / Await? — A beginner-friendly introduction to this new syntax and its purpose.]]></content:encoded>
+            <author>email@ranggapwsaputra (Konstantin Münster)</author>
+        </item>
+        <item>
+            <title><![CDATA[How To Plan And Organize A React Project – By Building A Weather App]]></title>
+            <link>https://konstantin.digital//blog/how-to-plan-and-organize-a-react-project-by-building-a-weather-app</link>
+            <guid>https://konstantin.digital//blog/how-to-plan-and-organize-a-react-project-by-building-a-weather-app</guid>
+            <pubDate>Sat, 27 Jul 2019 17:00:00 GMT</pubDate>
+            <description><![CDATA[Build this beautiful, small weather app and learn how to best plan and organize a React project. A beginner-friendly introduction to thinking in React.]]></description>
+            <content:encoded><![CDATA[Build this beautiful, small weather app and learn how to best plan and organize a React project. A beginner-friendly introduction to thinking in React.]]></content:encoded>
+            <author>email@ranggapwsaputra (Konstantin Münster)</author>
+        </item>
+        <item>
+            <title><![CDATA[An often-overlooked advantage of Fiverr]]></title>
+            <link>https://konstantin.digital//blog/an-often-overlooked-advantage-of-fiverr</link>
+            <guid>https://konstantin.digital//blog/an-often-overlooked-advantage-of-fiverr</guid>
+            <pubDate>Sat, 06 Jul 2019 17:00:00 GMT</pubDate>
+            <description><![CDATA[How Fiverr can help you in starting and growing a sustainable freelance business.]]></description>
+            <content:encoded><![CDATA[How Fiverr can help you in starting and growing a sustainable freelance business.]]></content:encoded>
+            <author>email@ranggapwsaputra (Konstantin Münster)</author>
+        </item>
+        <item>
+            <title><![CDATA[How to succeed on Fiverr — a dead simple strategy]]></title>
+            <link>https://konstantin.digital//blog/how-to-succeed-on-fiverr-a-dead-simple-strategy</link>
+            <guid>https://konstantin.digital//blog/how-to-succeed-on-fiverr-a-dead-simple-strategy</guid>
+            <pubDate>Sat, 15 Jun 2019 17:00:00 GMT</pubDate>
+            <description><![CDATA[Is it still possible to succeed as a new seller on Fiverr in 2019? — Yes, it is. Learn how to do it in just 5 simple steps.]]></description>
+            <content:encoded><![CDATA[Is it still possible to succeed as a new seller on Fiverr in 2019? — Yes, it is. Learn how to do it in just 5 simple steps.]]></content:encoded>
+            <author>email@ranggapwsaputra (Konstantin Münster)</author>
+        </item>
+        <item>
+            <title><![CDATA[I tried Freelancing on Fiverr — 3 lessons I’ve learned]]></title>
+            <link>https://konstantin.digital//blog/i-tried-freelancing-on-fiverr-3-lessons-ive-learned</link>
+            <guid>https://konstantin.digital//blog/i-tried-freelancing-on-fiverr-3-lessons-ive-learned</guid>
+            <pubDate>Sat, 18 May 2019 17:00:00 GMT</pubDate>
+            <description><![CDATA[Things you better keep in mind if you use Fiverr, a gig economy platform.]]></description>
+            <content:encoded><![CDATA[Things you better keep in mind if you use Fiverr, a gig economy platform.]]></content:encoded>
+            <author>email@ranggapwsaputra (Konstantin Münster)</author>
+        </item>
+    </channel>
+</rss>
