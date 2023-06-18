@@ -53,7 +53,7 @@ export const Logo = ({
 
   return (
     <Link href="/" aria-label="Go to home page" className="logo">
-      {LogoSvg}
+
     </Link>
   );
 };
