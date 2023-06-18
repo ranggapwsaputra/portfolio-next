@@ -27,7 +27,7 @@ export const footerNavigation: NavigationItem[] = [
     to: '/transparency',
     label: 'Transparency',
   },
-  {
-    label: ' | Buiild with 🧠 using NextJS',
-  },
+
+  | Buiild with 🧠 using NextJS',
+
 ];
