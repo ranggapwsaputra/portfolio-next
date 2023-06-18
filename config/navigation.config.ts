@@ -5,10 +5,6 @@ export type NavigationItem = {
 
 export const headerNavigation: NavigationItem[] = [
   {
-    to: '/',
-    label: 'Home',
-  },
-  {
     to: '/services',
     label: 'Services',
   },
@@ -20,14 +16,16 @@ export const headerNavigation: NavigationItem[] = [
     to: '/https://app.codesignal.com/profile/ranggapwsaputra',
     label: 'CodeSignal',
   },
+  // {
+  //   to: '/about',
+  //   label: 'About',
+  // },
 ];
 
 export const footerNavigation: NavigationItem[] = [
   {
-    to: '/transparency',
+    to: '/',
     label: 'Transparency',
-  },
-
-  | Buiild with 🧠 using NextJS',
-
+  }
+  asdadsadsadasdsa
 ];
