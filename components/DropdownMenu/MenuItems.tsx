@@ -99,7 +99,7 @@ export const MenuItems: React.FC<{ items: NavigationItem[] }> = props => {
               >
                 <Avatar size={32} />
                 <div>
-                  Konstantin Münster
+                  Rangga Saputra
                   <span>
                     {getEmailAddress(socialProfiles) ?? 'Write me an email'}
                   </span>

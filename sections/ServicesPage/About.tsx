@@ -61,7 +61,7 @@ export const AboutSection: React.FC = () => {
           <Picture
             src={PortraitImage}
             placeholder="blur"
-            alt="Konstantin Münster Portrait"
+            alt="Rangga Saputra Portrait"
             height="22rem"
             width="20rem"
             className="portrait"

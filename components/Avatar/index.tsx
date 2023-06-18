@@ -20,7 +20,7 @@ export const Avatar: React.FC<AvatarProps> = props => {
     <StyledAvatar data-avatar>
       <Image
         src={AvatarImage}
-        alt="Konstantin Münster Avatar"
+        alt="Rangga Saputra Avatar"
         height={size}
         width={size}
         placeholder={size > 40 ? 'blur' : undefined}

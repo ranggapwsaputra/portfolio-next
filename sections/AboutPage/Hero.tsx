@@ -100,7 +100,7 @@ export const HeroSection: React.FC = () => {
           <Picture
             src={PortraitImage}
             placeholder="blur"
-            alt="Konstantin Münster Portrait"
+            alt="Rangga Saputra Portrait"
             className="portrait"
           />
           <div className="hero-introduction">
