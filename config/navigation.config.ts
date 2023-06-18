@@ -28,7 +28,6 @@ export const footerNavigation: NavigationItem[] = [
     label: 'Transparency',
   },
   {
-    to: '/imprint',
-    label: 'Imprint',
+    label: ' | Buiild with 🧠 using NextJS',
   },
 ];
