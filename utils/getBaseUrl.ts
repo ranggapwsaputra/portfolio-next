@@ -14,6 +14,6 @@ export const getBaseUrl = (options?: GetBaseUrlOptions) => {
   }
 
   return options?.omitProtocol
-    ? 'konstantin.digital'
-    : 'https://konstantin.digital';
+    ? 'Rangga Saputra'
+    : 'https://ranggapwsaputra.id';
 };

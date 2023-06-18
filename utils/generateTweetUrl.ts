@@ -9,12 +9,12 @@ export const generateTweetUrl = (
 
   if (matter.path.includes(MDXContentType.Project)) {
     const projectMatter = matter as EnrichedProjectMatter;
-    return `${twitterUrl}?text=${projectMatter.name} by Konstantin Münster&url=https://konstantin.digital${projectMatter.path}`;
+    return `${twitterUrl}?text=${projectMatter.name} by Rangga Saputra&url=https://ranggapwsaputra.id${projectMatter.path}`;
   }
 
   if (matter.path.includes(MDXContentType.BlogPost)) {
     const blogPostMatter = matter as EnrichedBlogPostMatter;
-    return `${twitterUrl}?text=${blogPostMatter.title} by Konstantin Münster&url=https://konstantin.digital${blogPostMatter.path}`;
+    return `${twitterUrl}?text=${blogPostMatter.title} by Rangga Saputra&url=https://ranggapwsaputra.id${blogPostMatter.path}`;
   }
 
   return twitterUrl;
