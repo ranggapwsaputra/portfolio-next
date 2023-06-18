@@ -21,10 +21,3 @@ export const headerNavigation: NavigationItem[] = [
   //   label: 'About',
   // },
 ];
-
-export const footerNavigation: NavigationItem[] = [
-  {
-    to: '/',
-    label: 'Transparency',
-  }
-];
