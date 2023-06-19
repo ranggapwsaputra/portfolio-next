@@ -31,7 +31,7 @@ const jsonLdProps: ArticleJsonLdProps = {
   url: `${baseUrl}${ContentRoutes.blog}`,
   title: BlogTitle,
   description: BlogDescription,
-  authorName: 'Konstantin Münster',
+  authorName: 'Rangga Saputra',
   datePublished: new Date().toISOString(),
   images: [],
 };

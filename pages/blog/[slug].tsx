@@ -147,7 +147,7 @@ const BlogPost: React.FC<BlogPostProps> = ({ code, frontmatter }) => {
     article: {
       publishedTime: publishedAtDate,
       tags: frontmatter.tags,
-      authors: ['Konstantin Münster'],
+      authors: ['Rangga Saputra'],
     },
   });
 
@@ -156,8 +156,8 @@ const BlogPost: React.FC<BlogPostProps> = ({ code, frontmatter }) => {
     title: frontmatter.title,
     description: frontmatter.summary ?? '',
     url: `${baseUrl}${frontmatter.path}`,
-    authorName: 'Konstantin Münster',
-    publisherName: 'Konstantin Münster',
+    authorName: 'Rangga Saputra',
+    publisherName: 'Rangga Saputra',
     publisherLogo: `${baseUrl}/images/logo-k.png`,
     datePublished: publishedAtDate,
     dateModified: lastModifiedDate,

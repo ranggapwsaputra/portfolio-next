@@ -35,7 +35,7 @@ export const ContentRoutes = {
 } as const;
 
 export const FeaturedPost = {
-  slug: 'how-to-build-a-text-editor-like-notion',
+  slug: 'cara-membuat-text-editor-seperti-Notion',
 } as const;
 
 export const LatestProjects = ['notion-clone'];
