@@ -91,14 +91,14 @@ Di Notion, Anda dapat melakukan ini melalui perintah garis miring.
 
 Konsep perintah garis miring sederhana namun efektif. Setiap kali Anda mengetik di `/` dalam sebuah blok, menu type-ahead muncul tepat di atas kursor. Menu ini menampilkan semua jenis blok yang tersedia. Saat Anda menulis, Anda memfilter jenis blok dengan kueri Anda. Jika Anda menemukan jenis blok yang tepat, tekan saja 'Enter', dan blok tersebut berubah menjadi apa pun yang Anda pilih.
 
-Dalam aplikasi kami, semua perintah garis miring akan setara dengan elemen HTML yang sesuai. Artinya /h1perintah berubah menjadi heading H1 dan /pperintah berubah menjadi paragraf, misalnya.
+Dalam aplikasi kita, semua perintah garis miring akan setara dengan elemen HTML yang sesuai. Artinya /h1perintah berubah menjadi heading H1 dan /pperintah berubah menjadi paragraf, misalnya.
 
 
 Secara teknis, blok yang ada seperti <h1 contenteditable="true"> </h1>akibatnya akan berubah menjadi <p contenteditable="true"> </p> begitu pengguna mengetik /pdan menekan 'Enter'.
 
 ### The Practice: How Can We Rebuild It?
 
-Sekarang kita tahu cara kerjanya secara teori, mari kita praktikkan. Pertama-tama, kami membuat proyek React baru. Anda dapat melakukannya dengan menggunakan create-react-app atau alat lainnya.
+Sekarang kita tahu cara kerjanya secara teori, mari kita praktikkan. Pertama-tama, kita membuat proyek React baru. Anda dapat melakukannya dengan menggunakan create-react-app atau alat lainnya.
 
 #### 1 —Create An Editable Page
 
@@ -132,7 +132,7 @@ class EditablePage extends React.Component {
 export default EditablePage;
 ```
 
-Komponen halaman menyimpan dan merender semua blok yang akan kita buat nanti. Sebagai permulaan, kami hanya menyediakan blok pertama awal yang kami tentukan di bagian paling atas. Blok ini akan berubah menjadi elemen paragraf kosong setelah kita membuat komponen blok yang dapat diedit. Untuk saat ini, kami hanya membuat divwadah biasa.
+Komponen halaman menyimpan dan merender semua blok yang akan kita buat nanti. Sebagai permulaan, kita hanya menyediakan blok pertama awal yang kita tentukan di bagian paling atas. Blok ini akan berubah menjadi elemen paragraf kosong setelah kita membuat komponen blok yang dapat diedit. Untuk saat ini, kita hanya membuat divwadah biasa.
 
 
 Catatan: Karena setiap blok memerlukan ID unik, saya membuat fungsi pembantu uid()yang dapat kita gunakan untuk menginisialisasi blok baru. Jika Anda ingin menggunakan fungsi yang sama:
@@ -147,7 +147,7 @@ const uid = () => {
 
 Sebagai langkah selanjutnya, kita membuat komponen blok yang dapat diedit yang dapat kita render alih-alih div container. Untuk itu, kita harus install an external dependency bernama `react-contenteditable`.
 
-React-Contenteditable adalah paket yang membuat bekerja dengan elemen yang dapat diedit di React menjadi sangat mudah. Ini mengabstraksi banyak kerumitan bagi kita sehingga kita hanya perlu meneruskan properti yang tepat ke komponen ContentEditable. Komponen yang diekspos oleh paket kemudian menangani sisanya.
+React-Contenteditable adalah paket yang membuat bekerja dengan elemen yang dapat diedit di React menjadi sangat mudah. Ini mengabstraksi banyak kerumitan bagi kita sehingga kita hanya perlu meneruskan properti yang tepat ke komponen `ContentEditable`. Komponen yang diekspos oleh paket kemudian menangani sisanya.
 
 Untuk menginstal paket, run `npm i react-contenteditable`
 
@@ -203,20 +203,21 @@ export default EditableBlock;
 
 The editable block renders the `ContentEditable` component that we imported from the `react-contenteditable` package. By passing `html` and `tagName` as props to the component, we can define what should be displayed and how it should be displayed. Remember, the `tagName` defines the HTML element type and hence the styling.
 
-If we were to change the block type later on (e.g. from `p` to `h1`), we can simply update the `tagName` prop. Pretty easy, right?
-Blok yang dapat diedit merender ContentEditablekomponen yang kita impor dari react-contenteditablepaket. Dengan meneruskan htmldan tagNamesebagai prop ke komponen, kita dapat menentukan apa yang harus ditampilkan dan bagaimana tampilannya. Ingat, the tagNamemendefinisikan tipe elemen HTML dan karenanya gaya.
+Jika kita mengubah jenis blok nanti (misalnya dari p ke h1), kita cukup memperbarui prop tagName. gampang, kan?
+
+Blok yang bisa diedit merender `ContentEditable` komponen yang kita impor dari `react-contenteditable` paket. Dengan meneruskan html dan `tagName` sebagai prop ke komponen, kita dapat menentukan apa yang harus ditampilkan dan bagaimana tampilannya. Ingat, the `tagName` mendefinisikan tipe elemen HTML.
 
 
-Jika nanti kita akan mengubah jenis blok (misalnya dari pke h1), kita cukup memperbarui tagNameprop. Cukup mudah, bukan?
+Jika nanti kita akan mengubah jenis blok (misalnya dari `p` h1), kita cukup memperbarui `tagName` prop. Cukup mudah, bukan?
 
 
-Kami juga menambahkan manajemen status tingkat lanjut ke komponen blok. Saat komponen dipasang, ia menerima konten dan tag HTML awal melalui alat peraga dan menyimpannya di negara bagian. Mulai sekarang, komponen blok sepenuhnya memiliki status draf. Setiap perubahan selanjutnya pada htmlatau tagNameprop diabaikan.
+Kita juga menambahkan manajemen status tingkat lanjut ke komponen blok. Saat komponen dipasang, ia menerima konten dan tag `HTML` awal melalui alat peraga dan menyimpannya di negara bagian. Mulai sekarang, komponen blok sepenuhnya memiliki status draf. Setiap perubahan selanjutnya pada `html` atau `tagName` prop di abaikan saja.
 
 
-Ketika ada pembaruan yang relevan dengan properti htmlor tagNamestate, kami juga memperbarui status komponen halaman di componentDidUpdatelifecycle hook. Dengan demikian, kami menghindari rendering ulang halaman yang tidak perlu.
+Ketika ada pembaruan yang relevan dengan properti `html` or `tagName` state, kita juga memperbarui status komponen halaman di `componentDidUpdate` lifecycle hook. Dengan demikian, kita menghindari rendering ulang halaman yang tidak perlu.
 
 
-Setelah editableBlockkomponen kami siap, kami akhirnya dapat menggunakannya di komponen halaman kita:
+Setelah `editableBlock` komponen kita siap, kita akhirnya dapat menggunakannya di komponen halaman kita:
 
 ```jsx:editablePage.js {6-8,12-47,54} showLineNumbers
 const initialBlock = { id: uid(), html: '', tag: 'p' };
@@ -291,21 +292,21 @@ class EditablePage extends React.Component {
 export default EditablePage;
 ```
 
-Selain menggunakan EditableBlockkomponen di dalam renderhook, kami juga menambahkan metode baru di komponen halaman:
+Selain menggunakan `EditableBlock` komponen di dalam `render` hook, kita juga menambahkan metode baru di komponen halaman:
 
 
 
-Yang updateBlockHandlersudah kita gunakan di komponen blok kita menjaga agar halaman dan status blok tetap sinkron.
+Yang `updateBlockHandler` sudah kita gunakan di komponen blok kita menjaga agar halaman dan status blok tetap sinkron.
 
-Menambahkan addBlockHandlerblok baru dan mengatur fokus ke sana.
+Menambahkan `addBlockHandler` blok baru dan mengatur fokus ke sana.
 
-Menghapus deleteBlockHandlerblok dan menetapkan fokus ke blok sebelumnya.
-
-
-Kami meneruskan ketiga metode sebagai alat peraga ke blok yang dapat diedit.
+Menghapus `deleteBlockHandler` blok dan menetapkan fokus ke blok sebelumnya.
 
 
-Catatan: Di deleteBlockHandler, kami menggunakan fungsi pembantu lain yang secara manual mengatur kursor ke akhir konten blok. Jika kita hanya akan memfokuskan elemen seperti yang kita lakukan di addBlockHandler, itu akan memfokuskan elemen tersebut, tetapi dengan kursor yang diatur ke bagian paling awal dari konten blok. Jika Anda ingin menggunakan setCaretToEnd fungsi helper:
+kita meneruskan ketiga metode sebagai alat peraga ke blok yang dapat diedit.
+
+
+Catatan: Di `deleteBlockHandler`, kita menggunakan fungsi pembantu lain yang secara manual mengatur kursor ke akhir konten blok. Jika kita hanya akan memfokuskan elemen seperti yang kita lakukan di addBlockHandler, itu akan memfokuskan elemen tersebut, tetapi dengan kursor yang diatur ke bagian paling awal dari konten blok. Jika Anda ingin menggunakan `setCaretToEnd` fungsi helper:
 
 ```js:setCaretToEnd.js showLineNumbers
 const setCaretToEnd = element => {
@@ -321,10 +322,10 @@ const setCaretToEnd = element => {
 
 #### 3 — Implement A KeyDown Listener
 
-So far, kami hanya dapat menambahkan konten teks ke blok yang awalnya ditambahkan. Mari buat sedikit lebih interaktif dengan event listener pertama kita. Ini akan memungkinkan kita untuk menambah dan menghapus blok sesuka kita.
+So far, kita hanya dapat menambahkan konten teks ke blok yang awalnya ditambahkan. Mari buat sedikit lebih interaktif dengan event listener pertama kita. Ini akan memungkinkan kita untuk menambah dan menghapus blok sesuka kita.
 
 
-Di dalam editableBlock.js, kami membuat onKeyDownHandlermetode yang kami teruskan ke ContentEditable komponen:
+Di dalam `editableBlock.js`, kita membuat `onKeyDownHandler` metode yang kita teruskan ke `ContentEditable` komponen:
 
 ```jsx:editableBlock.js showLineNumbers
 class EditableBlock extends React.Component {
@@ -385,11 +386,11 @@ export default EditableBlock;
 
 As mentioned, this event listener is primarily responsible for adding and deleting blocks. But let’s break the `onKeyDownHandler` down bit by bit:
 
-- Terlepas dari tombol apa yang telah ditekan, simpan kunci di negara bagian. Kami membutuhkan previousKeyuntuk dapat mendeteksi kombinasi tombol.
-- Saat pengguna menekan /, kami menyimpan salinan konten HTML saat ini di negara bagian. Kami melakukannya karena kami ingin memulihkan versi HTML yang bersih setelah pengguna menyelesaikan proses pemilihan jenis blok.
-- Saat pengguna menekan Enter, kami mencegah perilaku default (yaitu menambahkan baris baru). Sebagai gantinya, kami membuat blok baru dengan menggunakan addBlockmetode yang sebelumnya kami buat di komponen halaman.
-- Karena pengguna tetap dapat menambahkan baris baru, kami menggunakan previousKeyproperti status untuk mendeteksi Shift+Enterkombinasi tombol. Jika demikian, kami tidak menambahkan blok baru dan membiarkan perilaku default 'Enter' terjadi.
-- Terakhir, kami menghapus blok kosong saat pengguna menekan Backspacedengan deleteBlockmetode tersebut.
+- Terlepas dari tombol apa yang telah ditekan, simpan kunci di negara bagian. kita membutuhkan previousKeyuntuk dapat mendeteksi kombinasi tombol.
+- Saat pengguna menekan /, kita menyimpan salinan konten HTML saat ini di negara bagian. kita melakukannya karena kita ingin memulihkan versi HTML yang bersih setelah pengguna menyelesaikan proses pemilihan jenis blok.
+- Saat pengguna menekan Enter, kita mencegah perilaku default (yaitu menambahkan baris baru). Sebagai gantinya, kita membuat blok baru dengan menggunakan addBlockmetode yang sebelumnya kita buat di komponen halaman.
+- Karena pengguna tetap dapat menambahkan baris baru, kita menggunakan previousKeyproperti status untuk mendeteksi Shift+Enterkombinasi tombol. Jika demikian, kita tidak menambahkan blok baru dan membiarkan perilaku default 'Enter' terjadi.
+- Terakhir, kita menghapus blok kosong saat pengguna menekan Backspacedengan deleteBlockmetode tersebut.
 
 <Image
   src={NotionCloneDelete}
@@ -401,16 +402,16 @@ Sekarang kita dapat membuat blok baru, bagaimana dengan perintah garis miring da
 
 #### 4 — Add A Select Menu
 
-Seperti disebutkan sebelumnya, ketika pengguna mengetik a /, kami ingin menampilkan menu pilih. Menu akan mencantumkan semua jenis blok yang tersedia. Jenis blok tertentu kemudian dapat dipilih dengan mengkliknya atau dengan mengetikkan perintah garis miring yang cocok.
+Seperti disebutkan sebelumnya, ketika pengguna mengetik a `/`, kita ingin menampilkan menu pilih. Menu akan mencantumkan semua jenis blok yang tersedia. Jenis blok tertentu kemudian dapat dipilih dengan mengkliknya atau dengan mengetikkan perintah garis miring yang cocok.
 
 
-Untuk mengimplementasikan menu pilihan seperti itu, pertama-tama kita harus menambahkan dependensi lain: match-sorter . Ini adalah paket sederhana yang membantu kami menanyakan jenis blok yang cocok.
+Untuk mengimplementasikan menu pilihan seperti itu, pertama-tama kita harus menambahkan dependensi lain: match-sorter . Ini adalah paket sederhana yang membantu kita mencari jenis blok yang cocok.
 
 
-Untuk menginstalnya, jalankan:npm i match-sorter
+Untuk menginstalnya, jalankan: `npm i match-sorter`
 
 
-Setelah selesai, kami membuat file baru bernama selectMenu.jsdengan konten berikut:
+Setelah selesai, kita membuat file baru bernama `selectMenu.js` dengan konten berikut:
 
 ```jsx:selectMenu.js showLineNumbers
 const MENU_HEIGHT = 150;
@@ -527,26 +528,26 @@ class SelectMenu extends React.Component {
 export default SelectMenu;
 ```
 
-Di bagian paling atas, kami menentukan jenis blok apa yang harus dipilih oleh pengguna. Setiap jenis memiliki tag dan label: tag menentukan jenis elemen HTML mana yang akan digunakan dan label menentukan nama tampilan di dalam menu kita.
+Di bagian paling atas, kita menentukan jenis blok apa yang harus dipilih oleh pengguna. Setiap jenis memiliki tag dan label: tag menentukan jenis elemen HTML mana yang akan digunakan dan label menentukan nama tampilan di dalam menu kita.
 
 
-Saat komponen terpasang, kami menghitung posisi menu di layar di dalam renderhook kami. Di sana, kami menggunakan this.props.position. Objek ini berisi posisi kursor saat ini karena kita ingin menampilkan menu tepat di atasnya.
+Saat komponen terpasang, kita menghitung posisi menu di layar di dalam `render` hook kita. Di sana, kita menggunakan `this.props.position`. Objek ini berisi posisi kursor saat ini karena kita ingin menampilkan menu tepat di atasnya.
 
 
-Selain itu, kami melampirkan keyDownevent listener di componentDidMounthook. Itu menjaga penyimpanan perintah yang dimasukkan dalam keadaan dan memungkinkan pengguna untuk memilih jenis blok melalui keyboard.
+Selain itu, kita melampirkan `keyDown` event listener di `componentDidMount` hook. Itu menjaga penyimpanan perintah yang dimasukkan dalam keadaan dan memungkinkan pengguna untuk memilih jenis blok melalui keyboard.
 
 
-Setiap kali commandproperti negara berubah, kami menjalankan fungsi yang diimpor matchedSorteruntuk memfilter jenis blok yang cocok. Dengan demikian, menu pilih hanya menampilkan jenis blok yang cocok dengan perintah kami.
+Setiap kali `command` properti bagian berubah, kita menjalankan fungsi yang diimpor `matchedSorter` untuk memfilter jenis blok yang cocok. Dengan demikian, menu pilih hanya menampilkan jenis blok yang cocok dengan perintah kita.
 
 
-Terakhir, saat pengguna menekan 'Enter' atau mengklik entri, kami menjalankan onSelectmetode yang kami terima melalui alat peraga.
+Terakhir, saat pengguna menekan 'Enter' atau mengklik entri, kita menjalankan `onSelect` metode yang kita terima melalui alat peraga.
 
 
 Memang, ini banyak kode sekaligus. Tetapi jika Anda melewatinya langkah demi langkah, semoga bisa dimengerti.
 
 #### 5 — Add Block Type Selection
 
-Selanjutnya, kita bisa menggabungkan semuanya. Karena kami memiliki komponen menu pilihan kami, kami dapat menambahkannya ke editableBlock.js:
+Selanjutnya, kita bisa menggabungkan semuanya. Karena kita memiliki komponen menu pilihan kita, kita dapat menambahkannya ke `editableBlock.js`:
 
 ```jsx:editableBlock.js showLineNumbers
 class EditableBlock extends React.Component {
@@ -631,40 +632,36 @@ class EditableBlock extends React.Component {
 export default EditableBlock;
 ```
 
-Pertama, kami mengimpor SelectMenukomponen kami dan merendernya secara kondisional. Kami dapat mengontrol visibilitasnya dengan properti negara kami selectMenuIsOpen. Jika kita menyetelnya ke true, kita merender menu sebagai tambahan ke ContentEditablekomponen.
+Pertama, kita mengimpor `SelectMenu` komponen kita dan merendernya secara kondisional. kita dapat mengontrol visibilitasnya dengan properti negara kita `selectMenuIsOpen`. Jika kita menyetelnya ke true, kita merender menu sebagai tambahan ke `ContentEditable` komponen.
 
 
-Selanjutnya, kami mengimplementasikan logika yang menentukan kapan dan di mana kami ingin menampilkannya.
+Selanjutnya, kita mengimplementasikan logika yang menentukan kapan dan di mana kita ingin menampilkannya.
 
 
-Kami mendefinisikan dua metode yang menangani pembukaan dan penutupan menu. Saat kami membukanya, pertama-tama kami mendapatkan koordinat kursor yang saat ini disetel. Kami melakukan ini karena kami ingin membuka menu tepat di atas kursor. Terakhir, kami menyimpan posisi ini dalam status, disetel selectMenuIsOpenke true, dan melampirkan pendengar klik.
+kita mendefinisikan dua metode yang menangani pembukaan dan penutupan menu. Saat kita membukanya, pertama-tama kita mendapatkan koordinat kursor yang saat ini disetel. kita melakukan ini karena kita ingin membuka menu tepat di atas kursor. Terakhir, kita menyimpan posisi ini dalam status, disetel `selectMenuIsOpen` menjadi true, dan klik listener.
 
-
-Pendengar klik bertanggung jawab untuk menutup menu pilihan setelah ada klik lain di layar — tidak peduli apakah itu di menu itu sendiri atau di luarnya. Kedua tindakan harus menutupnya.
-
-
-Metode kami closeSelectMenuHandlerkemudian cukup sederhana. Kami baru saja mengatur ulang properti status yang kami atur sebelumnya dan melepaskan pendengar klik lagi.
+Metode kita `closeSelectMenuHandler` kemudian cukup sederhana. kita baru saja mengatur ulang properti status yang kita atur sebelumnya dan melepaskan pendengar klik lagi.
 
 
 Setelah penangan pembuka dan penutup diimplementasikan, kita juga perlu menentukan kapan kita benar-benar ingin membuka menu.
 
 
-Dari perspektif pengguna, kami ingin membuka menu setelah pengguna memasukkan file /. Oleh karena itu, tampaknya intuitif untuk menambahkan this.openSelectMenuHandler()panggilan dalam metode yang kami tentukan sebelumnya onKeyDownHandler, bukan? Karena di sana, kami sudah memeriksa apakah pengguna menekan /tombol tersebut.
+Dari perspektif pengguna, kita ingin membuka menu setelah pengguna memasukkan file `/`. Oleh karena itu, tampaknya intuitif untuk menambahkan `this.openSelectMenuHandler()` panggilan dalam metode yang kita tentukan sebelumnya `onKeyDownHandler`, bukan? Karena di sana, kita sudah memeriksa apakah pengguna menekan `/` tombol tersebut.
 
 
-Faktanya, kita harus menambahkan event listener lain untuk itu. Menu hanya akan muncul setelah pengguna melepaskan kunci /. Jika tidak, posisi menu tidak akan berfungsi dengan benar. Karenanya, kami menambahkan pendengar acara baru keyUpuntuk itu.
+Faktanya, kita harus menambahkan event listener lain untuk itu. Menu hanya akan muncul setelah pengguna melepaskan kunci `/`. Jika tidak, posisi menu tidak akan berfungsi dengan benar. Karenanya, kita menambahkan pendengar acara baru `keyUp` untuk itu.
 
 
-Sekarang tinggal satu langkah terakhir yang harus diambil. Ingat bahwa kami meneruskan onSelectfungsi sebagai penyangga ke komponen menu pilih? Agar proses pemilihan berhasil, kita harus menentukan metode terkait untuk itu di komponen blok yang dapat diedit.
+Sekarang tinggal satu langkah terakhir yang harus diambil. Ingat bahwa kita meneruskan `onSelect` fungsi sebagai penyangga ke komponen menu pilih? Agar proses pemilihan berhasil, kita harus menentukan metode terkait untuk itu di komponen blok yang dapat diedit.
 
 
-Untungnya, metode ini agak sederhana. Di tagSelectionHandler, kami menerima jenis blok yang dipilih sebagai argumen tag. Dengan itu, kami dapat memperbarui tagNameproperti negara kami serta memulihkan cadangan HTML, yaitu konten HTML tanpa perintah yang dimasukkan.
+Untungnya, metode ini agak sederhana. Di `tagSelectionHandler`, kita menerima jenis blok yang dipilih sebagai argumen `tag`. Dengan itu, kita dapat memperbarui `tagName` properti kita serta memulihkan cadangan `HTML`, yaitu konten `HTML` tanpa perintah yang dimasukkan.
 
 
-Jika proses itu telah selesai, kami mengatur kursor ke blok yang dapat diedit lagi dan menutup menu.
+Jika proses itu telah selesai, kita mengatur kursor ke blok yang dapat diedit lagi dan menutup menu.
 
 
-Dan akhirnya, percaya atau tidak… kita sudah selesai 🎉
+And finally, kita sudah selesai 🎉
 
 
 Catatan: Saya kembali menggunakan fungsi pembantu untuk mendapatkan koordinat kursor. Jika Anda ingin menggunakan fungsi yang sama, and here it is:
@@ -688,14 +685,14 @@ const getCaretCoordinates = () => {
 
 ### **Ideas** For Further Development
 
-Sekarang setelah fungsi inti dari editor teks Notion dibangun kembali, kami memiliki dasar yang sempurna untuk pengembangan lebih lanjut. Ada banyak fitur yang dapat kita tambahkan ke aplikasi kita untuk meningkatkannya lebih lanjut.
+Sekarang setelah fungsi inti dari editor teks Notion dibangun kembali, kita memiliki dasar yang sempurna untuk pengembangan lebih lanjut. Ada banyak fitur yang dapat kita tambahkan ke aplikasi kita untuk meningkatkannya lebih lanjut.
 
 
 Saya selalu suka mencari inspirasi di aplikasi yang ada dan melihat apakah saya dapat membuat fiturnya sendiri. Sama halnya dengan Notion. Here are two concrete examples:
 
 #### Context Menu Based On Selection
 
-So far, hanya menampilkan menu pilih saat pengguna mengetik a /. Tetapi bagaimana jika pengguna ingin mengedit tipe blok yang ada dengan cepat? Atau dia ingin menghapus blok?
+So far, hanya menampilkan menu pilih saat pengguna mengetik a `/`. Tetapi bagaimana jika pengguna ingin mengedit tipe blok yang ada dengan cepat? Atau dia ingin menghapus blok?
 
 <Image
   src={NotionCloneContextMenu}
@@ -703,11 +700,11 @@ So far, hanya menampilkan menu pilih saat pengguna mengetik a /. Tetapi bagaiman
   caption="Context Menu that will pop up once the user selects content"
 />
 
-Di sini, menu konteks sangat berguna. Setiap kali pengguna memilih konten blok, kami menampilkan menu dengan dua opsi: mengubah jenis blok yang ada menjadi yang lain atau menghapus blok itu sendiri dengan satu klik.
+Di sini, menu konteks sangat berguna. Setiap kali pengguna memilih konten blok, kita menampilkan menu dengan dua opsi: mengubah jenis blok yang ada menjadi yang lain atau menghapus blok itu sendiri dengan satu klik.
 
 #### Rearrange Blocks By Drag and Drop
 
-Karena kami memiliki struktur blok yang mendasarinya, kami dapat mengatur ulang konten kami dengan cukup mudah. Mungkin pengguna menyadari bahwa paragraf yang satu ini harus berada lebih jauh di bagian atas halaman. Di Notion, Anda dapat dengan mudah menyusun ulang blok dengan fungsionalitas seret dan lepas yang lancar. And we can do that too!
+Karena kita memiliki struktur blok yang mendasarinya, kita dapat mengatur ulang konten kita dengan cukup mudah. Mungkin pengguna menyadari bahwa paragraf yang satu ini harus berada lebih jauh di bagian atas halaman. Di Notion, Anda dapat dengan mudah menyusun ulang blok dengan fungsionalitas seret dan lepas yang lancar. And we can do that too!
 
 <Image
   src={NotionCloneDragDrop}
@@ -717,6 +714,6 @@ Karena kami memiliki struktur blok yang mendasarinya, kami dapat mengatur ulang 
 
 ### Resources
 
-Memang, kami membahas banyak hal dalam artikel ini… tapi menurut saya ide dan proses membangun klon Notion sangat keren dan mengasyikkan, terutama untuk pemula React. Oleh karena itu, saya ingin menyediakan semua hal yang Anda butuhkan.
+Memang, kita membahas banyak hal dalam artikel ini… tapi menurut saya ide dan proses membangun klon Notion sangat keren dan mengasyikkan, terutama untuk pemula React. Oleh karena itu, saya ingin menyediakan semua hal yang Anda butuhkan.
 
 As always, thanks for reading! If you stumbled with any questions or issues throughout this article, let me know in the comment section. Thus, I can update and improve the article if needed. I appreciate any feedback!
