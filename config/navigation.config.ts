@@ -17,7 +17,7 @@ export const headerNavigation: NavigationItem[] = [
     label: 'Blog',
   },
   {
-    to: '/https://app.codesignal.com/profile/ranggapwsaputra',
+    to: 'https://app.codesignal.com/profile/ranggapwsaputra',
     label: 'CodeSignal',
   },
   // {
