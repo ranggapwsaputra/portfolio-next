@@ -1,4 +1,4 @@
-import PortraitImage from '../../public/images/PhotoServices.png';
+import PortraitImage from '../../public/images/servicepict.jpeg';
 
 import { styled } from '@config/stitches.config';
 import { ContentWrapper } from '@components/Layout';
