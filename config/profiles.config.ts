@@ -29,7 +29,7 @@ export const socialProfiles: Profile[] = [
     icon: TwitterSvg,
   },
   {
-    to: 'mailto:email@ranggapwsaputra',
+    to: 'mailto:email@ranggapwsaputra,',
     label: 'Email',
   },
 ];
