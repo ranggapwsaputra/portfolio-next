@@ -26,7 +26,7 @@ export const ProfileContent = ({
         <div style={{ display: 'flex', marginTop: '80px' }}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="https://konstantin.digital/images/avatar.jpg"
+            src="https://ranggapwsaputra.id/images/avatar.jpg"
             width={180}
             height={180}
             alt="profile"
