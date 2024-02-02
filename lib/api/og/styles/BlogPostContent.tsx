@@ -86,7 +86,7 @@ export const BlogPostContent = ({
                 fontFamily: font,
               }}
             >
-              Konstantin Münster
+              Rangga Saputra
             </span>
           </div>
         </div>
