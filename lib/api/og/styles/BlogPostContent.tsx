@@ -54,7 +54,7 @@ export const BlogPostContent = ({
         <div style={{ display: 'flex', marginTop: '64px' }}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="https://konstantin.digital/images/avatar.jpg"
+            src="https://ranggapwsaputra.id/images/avatar.jpg"
             width={60}
             height={60}
             alt="profile"
@@ -77,7 +77,7 @@ export const BlogPostContent = ({
                 paddingTop: '4px',
               }}
             >
-              Written By
+              Written By :
             </span>
             <span
               style={{
