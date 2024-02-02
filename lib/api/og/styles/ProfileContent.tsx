@@ -49,7 +49,7 @@ export const ProfileContent = ({
                 paddingTop: '8px',
               }}
             >
-              konstantin münster
+              Rangga Saputra
             </span>
             <span
               style={{
@@ -58,7 +58,7 @@ export const ProfileContent = ({
                 fontFamily: font,
               }}
             >
-              Web & Product Developer
+              System Developer & Cyber Security Advisor
             </span>
           </div>
         </div>
@@ -69,7 +69,7 @@ export const ProfileContent = ({
             fontFamily: font,
           }}
         >
-          konstantin.digital
+          ranggapwsaputra.id
         </span>
       </div>
     </div>
