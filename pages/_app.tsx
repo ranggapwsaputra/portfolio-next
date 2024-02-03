@@ -23,9 +23,9 @@ function MyApp({ Component, pageProps }: AppProps<PageProps>) {
   if (Component.defaultProps?.renderWithoutLayout)
     return (
       <ThemeProvider>
-        <Component {...pageProps} />
-      </SpeedInsights>
+        <Component {...pageProps} />      
       </ThemeProvider>
+      <SpeedInsights />
     );
 
   return (
