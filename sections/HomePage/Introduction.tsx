@@ -73,7 +73,7 @@ export const IntroductionSection: React.FC = () => {
         </div>
         <Picture
           src={PortraitImage}
-          alt="Konstantin Münster Portrait"
+          alt="Rangga Saputra"
           placeholder="blur"
           height="22rem"
           width="20rem"
