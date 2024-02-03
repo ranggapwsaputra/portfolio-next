@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 import { Footer } from '@components/Footer';
 import { Header } from '@components/Header';
@@ -11,6 +12,7 @@ export const PageLayout: React.FC = ({ children }) => {
       <Header variant={isFrontpage ? 'withoutLogo' : 'withLogo'} />
       <main>{children}</main>
       <Footer />
+      <SpeedInsights />
     </>
   );
 };
