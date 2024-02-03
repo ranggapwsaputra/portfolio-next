@@ -3,6 +3,7 @@ import '@fontsource/ibm-plex-sans/500.css';
 import 'focus-visible';
 
 import type { AppProps } from 'next/app';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import { DefaultSeo } from 'next-seo';
 import PlausibleProvider from 'next-plausible';
 
@@ -23,6 +24,7 @@ function MyApp({ Component, pageProps }: AppProps<PageProps>) {
     return (
       <ThemeProvider>
         <Component {...pageProps} />
+      </SpeedInsights>
       </ThemeProvider>
     );
 
